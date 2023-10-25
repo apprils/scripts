@@ -1,0 +1,26 @@
+{
+  "name": "@appril/scripts",
+  "description": "Utility Scripts for Appril Development",
+  "version": "0.2.0",
+  "author": "Slee Woo",
+  "license": "MIT",
+  "directories": {
+    "bin": "pkg"
+  },
+  "files": [
+    "pkg/*"
+  ],
+  "scripts": {
+    "// ✨ build": "",
+    "prebuild": "mkdir -p pkg; find pkg -type f -exec rm -fv {} \\;",
+    "build": "./lib/_build.sh",
+    "preversion:bump": "npm run build",
+    "// ✨ publish": "",
+    "prepub": "npm run build",
+    "pub": "npm pub"
+  },
+  "peerDependencies": {
+    "esbuild": "^0.19.5",
+    "nodemon": "^3.0.1"
+  }
+}
