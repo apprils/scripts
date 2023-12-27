@@ -1,9 +1,13 @@
 {
   "name": "@appril/scripts",
   "description": "Utility Scripts for Appril Development",
-  "version": "0.2.0",
+  "version": "0.2.3",
   "author": "Slee Woo",
   "license": "MIT",
+  "engines": {
+    "node": "20.10",
+    "npm": "10.2"
+  },
   "directories": {
     "bin": "pkg"
   },
@@ -17,10 +21,14 @@
     "preversion:bump": "npm run build",
     "// ✨ publish": "",
     "prepub": "npm run build",
-    "pub": "npm pub"
+    "pub": "npm pub",
+    "postpub": "mkdir -p var/pub; npm pack --pack-destination var/pub"
   },
   "peerDependencies": {
-    "esbuild": "^0.19.5",
-    "nodemon": "^3.0.1"
+    "esbuild": "^0.19.10",
+    "nodemon": "^3.0.2"
+  },
+  "devDependencies": {
+    "release-it": "^17.0.1"
   }
 }
