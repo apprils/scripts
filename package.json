@@ -4,6 +4,10 @@
   "version": "0.2.3",
   "author": "Slee Woo",
   "license": "MIT",
+  "engines": {
+    "node": "20.10",
+    "npm": "10.2"
+  },
   "directories": {
     "bin": "pkg"
   },
