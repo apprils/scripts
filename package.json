@@ -1,7 +1,7 @@
 {
   "name": "@appril/scripts",
   "description": "Utility Scripts for Appril Development",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Slee Woo",
   "license": "MIT",
   "engines": {
@@ -22,8 +22,13 @@
   },
   "release-it": {
     "hooks": {
-      "before:init": [ "npm run build" ],
-      "after:release": [ "mkdir -p var/pub", "npm pack --pack-destination var/pub" ]
+      "before:init": [
+        "npm run build"
+      ],
+      "after:release": [
+        "mkdir -p var/pub",
+        "npm pack --pack-destination var/pub"
+      ]
     }
   },
   "peerDependencies": {
