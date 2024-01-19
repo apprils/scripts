@@ -1,7 +1,7 @@
 {
   "name": "@appril/scripts",
   "description": "Utility Scripts for Appril Development",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "author": "Slee Woo",
   "license": "MIT",
   "engines": {
