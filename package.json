@@ -32,8 +32,7 @@
     }
   },
   "peerDependencies": {
-    "esbuild": "^0.19.11",
-    "nodemon": "^3.0.2"
+    "esbuild": "^0.19.11"
   },
   "devDependencies": {
     "release-it": "^17.0.1"
